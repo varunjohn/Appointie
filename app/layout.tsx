@@ -24,7 +24,7 @@ export default async function RootLayout({
   const currentUser = await getCurrentUser();
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-slate-300`}>
         <>
           <ClientOnly>
             <ToasterProvider />
