@@ -130,7 +130,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
 
   return (
     <div className="w-full mx-auto bg-slate-300">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 pb-12">
         <ListingHead
           title={listing.title}
           imageSrc={listing.imageSrc}
@@ -142,7 +142,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
           category={cate}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-7 md:gap-10 mt-4 px-8 sm:px-24">
+        <div className="grid grid-cols-1 md:grid-cols-7 md:gap-10 px-4 sm:px-8">
           <ListingInfo
             user={listing.user}
             category={cate}

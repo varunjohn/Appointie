@@ -44,8 +44,8 @@ const ListingHead: React.FC<ListingHeadProps> = ({
   return (
     <>
       <div className="grid sm:grid-cols-2 border-none grid-cols-1  overflow-hidden relative h-auto sm:h-auto shadow-xl sm:min-h-[550px] min-h-[800px] bg-[#1E2F5B]">
-        <div className="flex order-last sm:order-first flex-col h-auto py-4 sm:py-20 pl-8 sm:pl-24">
-          <div className="text-white font-bold text-4xl">{listing.title}</div>
+        <div className="flex order-last sm:order-first flex-col h-auto py-4 sm:py-20 px-8 sm:px-12">
+          <div className="text-white font-bold text-2xl">{listing.title}</div>
           <div className="text-white font-bold">By {user.name}</div>
           <div className="text-white font-semibold text-md">{`~ ${
             mins ? showMins : ''
@@ -54,7 +54,7 @@ const ListingHead: React.FC<ListingHeadProps> = ({
             {category?.label}
           </div>
           <div className="text-white mt-2 flex items-center gap-1 font-normal text-md">
-            {listing.locationValue}
+            {listing.locationValue} 
           </div>
           <div className="text-white pt-8 text-lg">{listing.description}</div>
           <div className="flex flex-row gap-3 mt-3">

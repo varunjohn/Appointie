@@ -41,9 +41,9 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
         <div className="cursor-pointer" onClick={() => router.push('/')}>
           <Image
             onClick={() => router.push('/')}
-            className="hidden md:block cursor-pointer"
-            src="/images/company_logo.png"
-            height="200"
+            className="cursor-pointer"
+            src="/images/appointie_logo.png"
+            height="140"
             width="200"
             alt="Logo"
           />
